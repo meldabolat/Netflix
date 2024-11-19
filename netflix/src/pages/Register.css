@@ -1,0 +1,88 @@
+/* Genel Ayarlar */
+  
+  .register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .register-container .logo {
+    margin-bottom: 20px;
+  }
+  
+  .register-container .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .register-container h1 {
+    font-size: 1.8rem;
+    color: #e50914;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .register-form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .register-form input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #333;
+    color: white;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .register-form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #e50914;
+    border: 1px solid #e50914;
+  }
+  
+  .btn {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #b00610;
+  }
+  
+  .register-container p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .register-container a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+  

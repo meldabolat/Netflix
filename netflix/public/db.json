@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "title": "Inception",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/e826ebbcc692b4d19059d24125cf23699067ab621c979612fd0ca11ab42a65cb._SX1080_FMjpg_.jpg",
+      "description": "A mind-bending thriller by Christopher Nolan.",
+      "duration": 148,
+      "director": "Christopher Nolan",
+      "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+      "category": "New Releases"
+    },
+    {
+      "title": "The Dark Knight",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/fd2a62ebf8534a10465dfc63ea11635bd42ed1692ad3af11d5e83ab553e3d0ae._SX1080_FMjpg_.jpg",
+      "description": "Batman faces off against the Joker in Gotham.",
+      "duration": 152,
+      "director": "Christopher Nolan",
+      "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "category": "Trending"
+    },
+    {
+      "title": "Interstellar",
+      "image": "https://pacificsciencecenter.org/wp-content/uploads/2023/11/interstellar-web.jpg",
+      "description": "A journey to the stars to save humanity.",
+      "duration": 169,
+      "director": "Christopher Nolan",
+      "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+      "category": "Trending"
+    },
+    {
+      "title": "The Matrix",
+      "image": "https://c.files.bbci.co.uk/B9FC/production/_122321674_1b22ad14-1466-4e5c-969a-5f9e7806ceb9.jpg",
+      "description": "A hacker discovers a dystopian world controlled by AI.",
+      "duration": 136,
+      "director": "The Wachowskis",
+      "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "category": "New Releases"
+    }
+  ]
+}
