@@ -1,0 +1,21 @@
+/* App Layout */
+.app-layout {
+    display: flex; /* Flexbox düzenini kullanarak öğeleri hizalıyoruz */
+    flex-direction: column; /* Tüm öğeleri dikey sıraya yerleştiriyoruz */
+    min-height: 100vh;
+    width: auto;
+  }
+  
+  .content {
+    flex: 1; /* İçerik alanının geri kalan kısmı kaplamasını sağlıyoruz */
+    padding: 20px; /* İçeriğe biraz boşluk ekliyoruz */
+    background-color: #181818; /* İçerik kısmının arka planını açıyoruz */
+    overflow-y: auto;
+    width: 100%; /* İçeriğin taşması durumunda kaydırma çubuğu ekliyoruz */
+    overflow-x: hidden; /* Yatay taşma engellendi */
+    min-height: calc(100vh - 60px);
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+  

@@ -1,0 +1,68 @@
+/* src/components/MovieCard.css */
+.movie-card-container {
+    margin-top: 10px;
+    display: grid; /* Grid düzeni */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dinamik sütun yapısı */
+    gap: 20px; /* Kartlar arası boşluk */
+    background-color: #141414; /* Arka plan */
+    width: 100%; /* Konteyner genişliği */
+    height: 100%; /* Sayfa yüksekliği */
+    margin: 0 auto; /* Ortalanmış düzen */
+  }
+  
+  .movie-card {
+    width: 100%; /* Kart genişliği grid'e uyum sağlar */
+    margin: 20px; /* Grid içindeki boşluk zaten gap ile kontrol ediliyor */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #181818;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out; /* Büyüme animasyonu */
+    cursor: pointer;
+    position: relative; /* Kartın kendi pozisyonunu belirliyoruz */
+    z-index: 1; /* Diğer öğelerin üstünde görünmesini engellemek için */
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05); /* Hover büyüme efekti */
+    z-index: 10; /* Hover durumunda kartın üstte olması sağlanır */
+  }
+  
+  .movie-card--open {
+    transform: scale(1.1); /* Kartın büyümesi */
+    z-index: 100; /* En üstte olması için */
+  }
+  
+  .movie-card__image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 2px solid #282828; /* Görsel ile metin arasında bir ayraç */
+  }
+  
+  .movie-card__info {
+    padding: 15px;
+  }
+  
+  .movie-card__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card__description {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+  }
+  
+  .movie-card__details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+  }
+  
+  .movie-card__details p {
+    margin: 5px 0;
+  }
+  

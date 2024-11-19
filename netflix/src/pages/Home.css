@@ -1,0 +1,34 @@
+.home {
+    color: white;
+    min-height: 100vh;
+    width: 100%; /* Sayfa genişliğini tam yapıyoruz */
+  }
+  
+  .home__content {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .home__category {
+    margin-bottom: 30px;
+  }
+  
+  .home__category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .home__movies {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 10px 0;
+  }
+  
+  .home__movies::-webkit-scrollbar {
+    display: none;
+  }
+  
