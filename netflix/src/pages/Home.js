@@ -22,6 +22,13 @@ const Home = () => {
           return acc;
         }, {});
 
+        // Favorites kategorisini rastgele sırala
+        if (groupedMovies["Favorites"]) {
+          groupedMovies["Favorites"] = groupedMovies["Favorites"].sort(
+            () => Math.random() - 0.5
+          );
+        }
+
         setMoviesByCategory(groupedMovies);
       })
       .catch((error) => {
@@ -37,7 +44,7 @@ const Home = () => {
           <div className="home__movies">
             {movies.map((movie) => (
               <MovieCard
-                key={movie.id}
+                key={movie.title}
                 title={movie.title}
                 image={movie.image}
                 description={movie.description}

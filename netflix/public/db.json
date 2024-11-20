@@ -10,6 +10,51 @@
       "category": "New Releases"
     },
     {
+      "title": "The Matrix",
+      "image": "https://c.files.bbci.co.uk/B9FC/production/_122321674_1b22ad14-1466-4e5c-969a-5f9e7806ceb9.jpg",
+      "description": "A hacker discovers a dystopian world controlled by AI.",
+      "duration": 136,
+      "director": "The Wachowskis",
+      "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "category": "New Releases"
+    },
+    {
+      "title": "Avatar",
+      "image": "https://upload.wikimedia.org/wikipedia/tr/1/12/Avatar-Film-Posteri.jpg",
+      "description": "A visually stunning sci-fi epic.",
+      "duration": 162,
+      "director": "James Cameron",
+      "cast": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "Titanic",
+      "image": "https://upload.wikimedia.org/wikipedia/az/d/d1/Titanik_%28film%2C_1997%29.jpg",
+      "description": "A tragic love story on the Titanic.",
+      "duration": 195,
+      "director": "James Cameron",
+      "cast": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+      "category": "Romance"
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+      "description": "Two imprisoned men bond over a number of years.",
+      "duration": 142,
+      "director": "Frank Darabont",
+      "cast": ["Tim Robbins", "Morgan Freeman"],
+      "category": "Favorites"
+    },
+    {
+      "title": "Pulp Fiction",
+      "image": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "description": "A chronicle of crime in Los Angeles.",
+      "duration": 154,
+      "director": "Quentin Tarantino",
+      "cast": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+      "category": "Favorites"
+    },
+    {
       "title": "The Dark Knight",
       "image": "https://m.media-amazon.com/images/S/pv-target-images/fd2a62ebf8534a10465dfc63ea11635bd42ed1692ad3af11d5e83ab553e3d0ae._SX1080_FMjpg_.jpg",
       "description": "Batman faces off against the Joker in Gotham.",
@@ -28,13 +73,290 @@
       "category": "Trending"
     },
     {
-      "title": "The Matrix",
-      "image": "https://c.files.bbci.co.uk/B9FC/production/_122321674_1b22ad14-1466-4e5c-969a-5f9e7806ceb9.jpg",
-      "description": "A hacker discovers a dystopian world controlled by AI.",
-      "duration": 136,
-      "director": "The Wachowskis",
-      "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "title": "Forrest Gump",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+      "description": "The story of a man's extraordinary life.",
+      "duration": 142,
+      "director": "Robert Zemeckis",
+      "cast": ["Tom Hanks", "Robin Wright"],
+      "category": "Favorites"
+    },
+    {
+      "title": "The Avengers",
+      "image": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/1000012284.jpg",
+      "description": "Earth's mightiest heroes unite to save the world.",
+      "duration": 143,
+      "director": "Joss Whedon",
+      "cast": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
       "category": "New Releases"
+    },
+    {
+      "title": "Dune",
+      "image": "https://tr.web.img4.acsta.net/pictures/21/10/13/11/52/2707524.jpg",
+      "description": "The son of a noble family entrusted with the protection of spice.",
+      "duration": 155,
+      "director": "Denis Villeneuve",
+      "cast": ["Timothée Chalamet", "Rebecca Ferguson"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "Jurassic Park",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
+      "description": "A theme park showcasing living dinosaurs turns deadly.",
+      "duration": 127,
+      "director": "Steven Spielberg",
+      "cast": ["Sam Neill", "Laura Dern", "Jeff Goldblum"],
+      "category": "Trending"
+    },
+    {
+      "title": "Gladiator",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_.jpg",
+      "description": "A former Roman General seeks revenge.",
+      "duration": 155,
+      "director": "Ridley Scott",
+      "cast": ["Russell Crowe", "Joaquin Phoenix"],
+      "category": "Romance"
+    },
+    {
+      "title": "Mad Max: Fury Road",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
+      "description": "In a post-apocalyptic wasteland, Max joins forces with Furiosa.",
+      "duration": 120,
+      "director": "George Miller",
+      "cast": ["Tom Hardy", "Charlize Theron"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "Spider-Man: No Way Home",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg",
+      "description": "Spider-Man faces new multiverse villains.",
+      "duration": 148,
+      "director": "Jon Watts",
+      "cast": ["Tom Holland", "Zendaya", "Benedict Cumberbatch"],
+      "category": "New Releases"
+    },
+    {
+      "title": "The Lion King",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+      "description": "A young lion prince flees his kingdom after the death of his father.",
+      "duration": 88,
+      "director": "Roger Allers",
+      "cast": ["Matthew Broderick", "James Earl Jones", "Jeremy Irons"],
+      "category": "Favorites"
+    },
+    {
+      "title": "Doctor Strange",
+      "image": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg",
+      "description": "A brilliant surgeon discovers magic after a car accident.",
+      "duration": 115,
+      "director": "Scott Derrickson",
+      "cast": ["Benedict Cumberbatch", "Rachel McAdams", "Chiwetel Ejiofor"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "Frozen",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
+      "description": "A princess sets out to find her sister who has icy powers.",
+      "duration": 102,
+      "director": "Chris Buck, Jennifer Lee",
+      "cast": ["Kristen Bell", "Idina Menzel", "Josh Gad"],
+      "category": "Romance"
+    },
+    {
+      "title": "Shrek",
+      "image": "https://img.fullhdfilmizlesene.de/poster/izle-lg/fullhd-srek-turkce-dublaj-izle.jpg",
+      "description": "An ogre and a donkey rescue a princess.",
+      "duration": 90,
+      "director": "Andrew Adamson",
+      "cast": ["Mike Myers", "Eddie Murphy", "Cameron Diaz"],
+      "category": "Favorites"
+    },
+    {
+      "title": "The Social Network",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "description": "The story of the creation of Facebook.",
+      "duration": 120,
+      "director": "David Fincher",
+      "cast": ["Jesse Eisenberg", "Andrew Garfield", "Justin Timberlake"],
+      "category": "Trending"
+    },{
+      "title": "The Wolf of Wall Street",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
+      "description": "The story of a New York stockbroker's rise and fall.",
+      "duration": 180,
+      "director": "Martin Scorsese",
+      "cast": ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie"],
+      "category": "Trending"
+    },
+    {
+      "title": "Black Panther",
+      "image": "https://cdn.kobo.com/book-images/7e060fa5-3a91-4ed1-94a3-57274b53e233/1200/1200/False/marvel-s-black-panther-4.jpg",
+      "description": "The king of Wakanda fights to save his kingdom.",
+      "duration": 134,
+      "director": "Ryan Coogler",
+      "cast": ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o"],
+      "category": "New Releases"
+    },
+    {
+      "title": "Coco",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/p_coco_19736_fd5fa537.jpeg?region=0,0,540,810",
+      "description": "A boy journeys to the Land of the Dead to discover his family's history.",
+      "duration": 105,
+      "director": "Lee Unkrich",
+      "cast": ["Anthony Gonzalez", "Gael García Bernal", "Benjamin Bratt"],
+      "category": "Favorites"
+    },
+    {
+      "title": "Inside Out",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg",
+      "description": "The emotions inside a young girl's mind navigate her life.",
+      "duration": 95,
+      "director": "Pete Docter",
+      "cast": ["Amy Poehler", "Phyllis Smith", "Bill Hader"],
+      "category": "Romance"
+    },
+    {
+      "title": "Toy Story 4",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_FMjpg_UX1000_.jpg",
+      "description": "Woody and Buzz embark on a road trip with new friends.",
+      "duration": 100,
+      "director": "Josh Cooley",
+      "cast": ["Tom Hanks", "Tim Allen", "Annie Potts"],
+      "category": "New Releases"
+    },
+    {
+      "title": "Joker",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
+      "description": "The origin story of Gotham's most infamous villain.",
+      "duration": 122,
+      "director": "Todd Phillips",
+      "cast": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"],
+      "category": "Trending"
+    },
+    {
+      "title": "Aladdin",
+      "image": "https://lumiere-a.akamaihd.net/v1/images/image_9e35a739.jpeg?region=0,0,540,810",
+      "description": "A young man discovers a magic lamp with a genie inside.",
+      "duration": 128,
+      "director": "Guy Ritchie",
+      "cast": ["Mena Massoud", "Naomi Scott", "Will Smith"],
+      "category": "Romance"
+    },
+    {
+      "title": "The Hunger Games",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+      "description": "A young girl becomes a symbol of rebellion in a dystopian society.",
+      "duration": 142,
+      "director": "Gary Ross",
+      "cast": ["Jennifer Lawrence", "Josh Hutcherson", "Liam Hemsworth"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "The Greatest Showman",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png",
+      "description": "The story of P.T. Barnum and his rise to fame.",
+      "duration": 105,
+      "director": "Michael Gracey",
+      "cast": ["Hugh Jackman", "Zac Efron", "Michelle Williams"],
+      "category": "Favorites"
+    },
+    {
+      "title": "Moana",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/26/Moana_Teaser_Poster.jpg",
+      "description": "A young girl sets out on a journey to save her island.",
+      "duration": 107,
+      "director": "Ron Clements, John Musker",
+      "cast": ["Auli'i Cravalho", "Dwayne Johnson", "Rachel House"],
+      "category": "New Releases"
+    },{
+      "title": "The Hobbit: An Unexpected Journey",
+      "image": "https://play-lh.googleusercontent.com/BsTNbp2qk09yqmDkqNrbTZhq0uPT6x0B7L49jdCfUxFKGkLZlvJsrQnP7FSV8UDhjrQn",
+      "description": "Bilbo Baggins embarks on an epic quest to reclaim the lost Dwarf Kingdom.",
+      "duration": 169,
+      "director": "Peter Jackson",
+      "cast": ["Martin Freeman", "Ian McKellen", "Richard Armitage"],
+      "category": "Trending"
+    },
+    {
+      "title": "The Secret Life of Pets",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/64/The_Secret_Life_of_Pets_poster.jpg",
+      "description": "What pets do when their owners are away.",
+      "duration": 86,
+      "director": "Chris Renaud",
+      "cast": ["Louis C.K.", "Eric Stonestreet", "Kevin Hart"],
+      "category": "Favorites"
+    },
+    {
+      "title": "Wonder Woman",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjEzYmZkNjktODBmYi00NzNkLWIzMjItMjhkMWZiZTZlN2MwXkEyXkFqcGc@._V1_.jpg",
+      "description": "The origin story of Diana, the Amazonian princess who becomes Wonder Woman.",
+      "duration": 141,
+      "director": "Patty Jenkins",
+      "cast": ["Gal Gadot", "Chris Pine", "Robin Wright"],
+      "category": "New Releases"
+    },
+    {
+      "title": "Ratatouille",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+      "description": "A rat with a passion for cooking teams up with a young chef.",
+      "duration": 111,
+      "director": "Brad Bird",
+      "cast": ["Patton Oswalt", "Ian Holm", "Lou Romano"],
+      "category": "Favorites"
+    },
+    {
+      "title": "The Godfather",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+      "description": "The story of the Corleone crime family.",
+      "duration": 175,
+      "director": "Francis Ford Coppola",
+      "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
+      "category": "Trending"
+    },
+    {
+      "title": "Finding Nemo",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+      "description": "A clownfish searches for his son in the vast ocean.",
+      "duration": 100,
+      "director": "Andrew Stanton",
+      "cast": ["Albert Brooks", "Ellen DeGeneres", "Alexander Gould"],
+      "category": "Romance"
+    },
+    {
+      "title": "Avengers: Endgame",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "description": "The Avengers assemble one final time to undo Thanos' actions.",
+      "duration": 181,
+      "director": "Anthony Russo, Joe Russo",
+      "cast": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "Brave",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/96/Brave_Poster.jpg",
+      "description": "A princess must rely on her bravery to undo a beastly curse.",
+      "duration": 93,
+      "director": "Mark Andrews, Brenda Chapman",
+      "cast": ["Kelly Macdonald", "Billy Connolly", "Emma Thompson"],
+      "category": "Favorites"
+    },
+    {
+      "title": "Star Wars: The Force Awakens",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
+      "description": "The Resistance faces the First Order in a new era of Star Wars.",
+      "duration": 138,
+      "director": "J.J. Abrams",
+      "cast": ["Daisy Ridley", "John Boyega", "Adam Driver"],
+      "category": "Sci-Fi"
+    },
+    {
+      "title": "Beauty and the Beast",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Beauty_and_the_Beast_2017_poster.jpg",
+      "description": "A cursed prince learns the meaning of true love.",
+      "duration": 129,
+      "director": "Bill Condon",
+      "cast": ["Emma Watson", "Dan Stevens", "Luke Evans"],
+      "category": "Romance"
     }
   ]
 }

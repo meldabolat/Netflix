@@ -1,37 +1,27 @@
 // src/components/MovieCard.js
-import React, { useState } from "react";
+import React from "react";
 import "./MovieCard.css";
 
-const MovieCard = ({ title, image, description, duration, director, cast }) => {
-  const [isOpen, setIsOpen] = useState(false); // Kart açılma durumu
-
-  const toggleDetails = () => {
-    setIsOpen(!isOpen); // Detayları göster/gizle
-  };
-
+const MovieCard = ({ title, image, description, duration, director, cast, }) => {
   return (
-    <div
-      className={`movie-card ${isOpen ? "movie-card--open" : ""}`}
-      onClick={toggleDetails}
-    >
+    <div className="movie-card">
       <img src={image} alt={title} className="movie-card__image" />
-      <div className="movie-card__info">
-        <h3 className="movie-card__title">{title}</h3>
-        <p className="movie-card__description">{description}</p>
-        {isOpen && (
-          <div className="movie-card__details">
-            <p>
-              <strong>Duration:</strong> {duration} mins
-            </p>
-            <p>
-              <strong>Director:</strong> {director}
-            </p>
-            <p>
-              <strong>Cast:</strong> {cast.join(", ")}
-            </p>
-          </div>
-        )}
+      <div className="movie-card__overlay">
+        <div className="movie-card__details">
+          <h3 className="movie-card__details-title">{title}</h3>
+          <p>{description}</p>
+          <p>
+            <strong>Duration:</strong> {duration} mins
+          </p>
+          <p>
+            <strong>Director:</strong> {director}
+          </p>
+          <p>
+            <strong>Cast:</strong> {cast.join(", ")}
+          </p>
+        </div>
       </div>
+      <div className="movie-card__title">{title}</div>
     </div>
   );
 };

@@ -1,18 +1,16 @@
-/* App Layout */
 .app-layout {
-    display: flex; /* Flexbox düzenini kullanarak öğeleri hizalıyoruz */
-    flex-direction: column; /* Tüm öğeleri dikey sıraya yerleştiriyoruz */
+    display: flex; 
+    flex-direction: column; 
     min-height: 100vh;
     width: auto;
   }
   
   .content {
-    flex: 1; /* İçerik alanının geri kalan kısmı kaplamasını sağlıyoruz */
-    padding: 20px; /* İçeriğe biraz boşluk ekliyoruz */
-    background-color: #181818; /* İçerik kısmının arka planını açıyoruz */
+    flex: 1; 
+    background-color: #181818; 
     overflow-y: auto;
-    width: 100%; /* İçeriğin taşması durumunda kaydırma çubuğu ekliyoruz */
-    overflow-x: hidden; /* Yatay taşma engellendi */
+    width: 100%; 
+    overflow-x: hidden; 
     min-height: calc(100vh - 60px);
     margin: 0;
     box-sizing: border-box;
