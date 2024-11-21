@@ -1,34 +1,34 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Avatar, Button, Card, Row, Col, Space } from 'antd';
+import { Avatar, Button, Space } from 'antd';
 import { LogoutOutlined, EditOutlined } from '@ant-design/icons'; // Logout and Edit icons
 import './Profile.css';
 
-const { Meta } = Card;
+
 
 const Profile = () => {
-  const [user, setUser] = useState(null); // User state to store data from API
-  const [loading, setLoading] = useState(true); // Loading state to manage loading status
+  const [user, setUser] = useState(null); 
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     // Fetch user profile data from db.json file using Axios
     axios.get('http://localhost:5000/user')
       .then((response) => {
-        setUser(response.data); // Set the fetched data to the state
-        setLoading(false); // Set loading to false after data is fetched
+        setUser(response.data); 
+        setLoading(false); 
       })
       .catch((error) => {
         console.error("Error fetching user data:", error);
-        setLoading(false); // Set loading to false in case of error
+        setLoading(false); 
       });
-  }, []); // Empty dependency array ensures the request is made only once when component is mounted
+  }, []); 
 
   if (loading) {
-    return <div>Loading...</div>; // Display loading message while data is being fetched
+    return <div>Loading...</div>; 
   }
 
   if (!user) {
-    return <div>Something went wrong...</div>; // Error message if no user data is returned
+    return <div>Something went wrong...</div>; 
   }
 
   return (
