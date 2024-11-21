@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
+import { UserOutlined } from '@ant-design/icons';
 const Navbar = () => {
 
 
@@ -27,11 +27,11 @@ const Navbar = () => {
         
       </ul>
       <div className="navbar__profile">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-          alt="User Profile"
-          className="navbar__avatar"
-        />
+      <li>
+          <Link to="/profile">
+          <UserOutlined style={{ fontSize: '24px', color: 'white' }} />
+          </Link>
+        </li>
       </div>
     </nav>
   );
