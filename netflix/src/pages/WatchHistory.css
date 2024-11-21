@@ -1,0 +1,37 @@
+/* WatchHistory.css */
+.watch-history-container {
+    padding: 20px; /* İçerik çevresine boşluk */
+  }
+  
+  .watch-history-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px; /* Başlık ve içerik arasına boşluk */
+  }
+  
+  .watch-history-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Kartlar arasında boşluk */
+  }
+  
+  .watch-history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .watch-history-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Resim ve başlık arasına boşluk */
+  }
+  
+  .watch-history-item h3 {
+    font-size: 16px;
+    color: white;
+  }
+  

@@ -1,0 +1,36 @@
+/* List.css */
+.list-container {
+    padding: 20px; /* İçerik çevresine boşluk */
+  }
+  
+  .list-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px; /* Başlık ve içerik arasına boşluk */
+  }
+  
+  .list-items {
+    display: flex;
+    gap: 20px; /* Kartlar arasında boşluk */
+  }
+  
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .list-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Resim ve başlık arasına boşluk */
+  }
+  
+  .list-item h3 {
+    font-size: 16px;
+    color: white;
+  }
+  

@@ -6,6 +6,38 @@
   padding: 20px;
 }
 
+.home__search {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home__search input {
+  padding: 10px;
+  width: 50%;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+.home__category-select {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home__category-select select {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
 .home__category {
   margin-bottom: 40px; /* Kategoriler arasındaki boşluk */
 }

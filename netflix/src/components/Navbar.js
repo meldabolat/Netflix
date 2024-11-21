@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to="/watchhistory">History</Link>
         </li>
         <li>
-          <Link to="/favorites">Favorites</Link>
+          <Link to="/list">List</Link>
         </li>
         
       </ul>
