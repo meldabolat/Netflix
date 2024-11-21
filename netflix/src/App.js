@@ -8,7 +8,7 @@ import WatchHistory from "./pages/WatchHistory";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Layout from "./layout/Layout";
-
+import Profile from "./pages/Profile";
 function App() {
   return (
     <WatchHistoryProvider>
@@ -21,6 +21,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="watchhistory" element={<WatchHistory />} />
               <Route path="list" element={<List />} />
+              <Route path="profile" element={<Profile />} />
             </Route>
           </Routes>
         </Router>

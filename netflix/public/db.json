@@ -1,4 +1,20 @@
 {
+  "user": {
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "profile_picture": "https://example.com/path/to/profile-picture.jpg",
+    "subscriptions": ["New Releases", "Favorites"],
+    "watch_history": [
+      {
+        "title": "Inception",
+        "date_watched": "2024-11-15"
+      },
+      {
+        "title": "Titanic",
+        "date_watched": "2024-11-10"
+      }
+    ]
+  },
   "movies": [
     {
       "title": "Inception",
