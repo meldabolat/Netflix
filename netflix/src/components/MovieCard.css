@@ -50,13 +50,13 @@
   padding: 10px;
 }
 
-.movie-card__details-title {
+.movie-card__details-name {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.movie-card__title {
+.movie-card__name {
   position: absolute;
   bottom: 0;
   left: 0;

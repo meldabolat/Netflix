@@ -8,19 +8,19 @@ export const MovieProvider = ({ children }) => {
   const [watchHistory, setWatchHistory] = useState([]);
 
   const addFavorite = (movie) => {
-    if (!favoriteMovies.find((fav) => fav.title === movie.title)) {
+    if (!favoriteMovies.find((fav) => fav.name === movie.name)) {
       setFavoriteMovies([...favoriteMovies, movie]);
     }
   };
 
   const addToList = (movie) => {
-    if (!listMovies.find((item) => item.title === movie.title)) {
+    if (!listMovies.find((item) => item.name === movie.name)) {
       setListMovies([...listMovies, movie]);
     }
   };
 
   const addToWatchHistory = (movie) => {
-    if (!watchHistory.find((watched) => watched.title === movie.title)) {
+    if (!watchHistory.find((watched) => watched.name === movie.name)) {
       setWatchHistory([...watchHistory, movie]);
     }
   };

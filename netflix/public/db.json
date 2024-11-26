@@ -6,18 +6,18 @@
     "subscriptions": ["New Releases", "Favorites"],
     "watch_history": [
       {
-        "title": "Inception",
+        "name": "Inception",
         "date_watched": "2024-11-15"
       },
       {
-        "title": "Titanic",
+        "name": "Titanic",
         "date_watched": "2024-11-10"
       }
     ]
   },
   "movies": [
     {
-      "title": "Inception",
+      "name": "Inception",
       "image": "https://m.media-amazon.com/images/S/pv-target-images/e826ebbcc692b4d19059d24125cf23699067ab621c979612fd0ca11ab42a65cb._SX1080_FMjpg_.jpg",
       "description": "A mind-bending thriller by Christopher Nolan.",
       "duration": 148,
@@ -26,7 +26,7 @@
       "category": "New Releases"
     },
     {
-      "title": "The Matrix",
+      "name": "The Matrix",
       "image": "https://c.files.bbci.co.uk/B9FC/production/_122321674_1b22ad14-1466-4e5c-969a-5f9e7806ceb9.jpg",
       "description": "A hacker discovers a dystopian world controlled by AI.",
       "duration": 136,
@@ -35,16 +35,16 @@
       "category": "New Releases"
     },
     {
-      "title": "Avatar",
+      "name": "Avatar",
       "image": "https://upload.wikimedia.org/wikipedia/tr/1/12/Avatar-Film-Posteri.jpg",
       "description": "A visually stunning sci-fi epic.",
       "duration": 162,
       "director": "James Cameron",
       "cast": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
-      "category": "Sci-Fi"
+      "category":[ "Sci-Fi", "Favorites"]
     },
     {
-      "title": "Titanic",
+      "name": "Titanic",
       "image": "https://upload.wikimedia.org/wikipedia/az/d/d1/Titanik_%28film%2C_1997%29.jpg",
       "description": "A tragic love story on the Titanic.",
       "duration": 195,
@@ -53,7 +53,7 @@
       "category": "Romance"
     },
     {
-      "title": "The Shawshank Redemption",
+      "name": "The Shawshank Redemption",
       "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
       "description": "Two imprisoned men bond over a number of years.",
       "duration": 142,
@@ -62,7 +62,7 @@
       "category": "Favorites"
     },
     {
-      "title": "Pulp Fiction",
+      "name": "Pulp Fiction",
       "image": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "description": "A chronicle of crime in Los Angeles.",
       "duration": 154,
@@ -71,7 +71,7 @@
       "category": "Favorites"
     },
     {
-      "title": "The Dark Knight",
+      "name": "The Dark Knight",
       "image": "https://m.media-amazon.com/images/S/pv-target-images/fd2a62ebf8534a10465dfc63ea11635bd42ed1692ad3af11d5e83ab553e3d0ae._SX1080_FMjpg_.jpg",
       "description": "Batman faces off against the Joker in Gotham.",
       "duration": 152,
@@ -80,7 +80,7 @@
       "category": "Trending"
     },
     {
-      "title": "Interstellar",
+      "name": "Interstellar",
       "image": "https://pacificsciencecenter.org/wp-content/uploads/2023/11/interstellar-web.jpg",
       "description": "A journey to the stars to save humanity.",
       "duration": 169,
@@ -89,7 +89,7 @@
       "category": "Trending"
     },
     {
-      "title": "Forrest Gump",
+      "name": "Forrest Gump",
       "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
       "description": "The story of a man's extraordinary life.",
       "duration": 142,
@@ -98,7 +98,7 @@
       "category": "Favorites"
     },
     {
-      "title": "The Avengers",
+      "name": "The Avengers",
       "image": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/1000012284.jpg",
       "description": "Earth's mightiest heroes unite to save the world.",
       "duration": 143,
@@ -107,7 +107,7 @@
       "category": "New Releases"
     },
     {
-      "title": "Dune",
+      "name": "Dune",
       "image": "https://tr.web.img4.acsta.net/pictures/21/10/13/11/52/2707524.jpg",
       "description": "The son of a noble family entrusted with the protection of spice.",
       "duration": 155,
@@ -116,7 +116,7 @@
       "category": "Sci-Fi"
     },
     {
-      "title": "Jurassic Park",
+      "name": "Jurassic Park",
       "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
       "description": "A theme park showcasing living dinosaurs turns deadly.",
       "duration": 127,
@@ -125,7 +125,7 @@
       "category": "Trending"
     },
     {
-      "title": "Gladiator",
+      "name": "Gladiator",
       "image": "https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_.jpg",
       "description": "A former Roman General seeks revenge.",
       "duration": 155,
@@ -134,7 +134,7 @@
       "category": "Romance"
     },
     {
-      "title": "Mad Max: Fury Road",
+      "name": "Mad Max: Fury Road",
       "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
       "description": "In a post-apocalyptic wasteland, Max joins forces with Furiosa.",
       "duration": 120,
@@ -143,7 +143,7 @@
       "category": "Sci-Fi"
     },
     {
-      "title": "Spider-Man: No Way Home",
+      "name": "Spider-Man: No Way Home",
       "image": "https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg",
       "description": "Spider-Man faces new multiverse villains.",
       "duration": 148,
@@ -152,7 +152,7 @@
       "category": "New Releases"
     },
     {
-      "title": "The Lion King",
+      "name": "The Lion King",
       "image": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
       "description": "A young lion prince flees his kingdom after the death of his father.",
       "duration": 88,
@@ -161,7 +161,7 @@
       "category": "Favorites"
     },
     {
-      "title": "Doctor Strange",
+      "name": "Doctor Strange",
       "image": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg",
       "description": "A brilliant surgeon discovers magic after a car accident.",
       "duration": 115,
@@ -170,7 +170,7 @@
       "category": "Sci-Fi"
     },
     {
-      "title": "Frozen",
+      "name": "Frozen",
       "image": "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
       "description": "A princess sets out to find her sister who has icy powers.",
       "duration": 102,
@@ -179,7 +179,7 @@
       "category": "Romance"
     },
     {
-      "title": "Shrek",
+      "name": "Shrek",
       "image": "https://img.fullhdfilmizlesene.de/poster/izle-lg/fullhd-srek-turkce-dublaj-izle.jpg",
       "description": "An ogre and a donkey rescue a princess.",
       "duration": 90,
@@ -188,7 +188,7 @@
       "category": "Favorites"
     },
     {
-      "title": "The Social Network",
+      "name": "The Social Network",
       "image": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "description": "The story of the creation of Facebook.",
       "duration": 120,
@@ -196,7 +196,7 @@
       "cast": ["Jesse Eisenberg", "Andrew Garfield", "Justin Timberlake"],
       "category": "Trending"
     },{
-      "title": "The Wolf of Wall Street",
+      "name": "The Wolf of Wall Street",
       "image": "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
       "description": "The story of a New York stockbroker's rise and fall.",
       "duration": 180,
@@ -205,7 +205,7 @@
       "category": "Trending"
     },
     {
-      "title": "Black Panther",
+      "name": "Black Panther",
       "image": "https://cdn.kobo.com/book-images/7e060fa5-3a91-4ed1-94a3-57274b53e233/1200/1200/False/marvel-s-black-panther-4.jpg",
       "description": "The king of Wakanda fights to save his kingdom.",
       "duration": 134,
@@ -214,7 +214,7 @@
       "category": "New Releases"
     },
     {
-      "title": "Coco",
+      "name": "Coco",
       "image": "https://lumiere-a.akamaihd.net/v1/images/p_coco_19736_fd5fa537.jpeg?region=0,0,540,810",
       "description": "A boy journeys to the Land of the Dead to discover his family's history.",
       "duration": 105,
@@ -223,7 +223,7 @@
       "category": "Favorites"
     },
     {
-      "title": "Inside Out",
+      "name": "Inside Out",
       "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg",
       "description": "The emotions inside a young girl's mind navigate her life.",
       "duration": 95,
@@ -232,7 +232,7 @@
       "category": "Romance"
     },
     {
-      "title": "Toy Story 4",
+      "name": "Toy Story 4",
       "image": "https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_FMjpg_UX1000_.jpg",
       "description": "Woody and Buzz embark on a road trip with new friends.",
       "duration": 100,
@@ -241,7 +241,7 @@
       "category": "New Releases"
     },
     {
-      "title": "Joker",
+      "name": "Joker",
       "image": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
       "description": "The origin story of Gotham's most infamous villain.",
       "duration": 122,
@@ -250,7 +250,7 @@
       "category": "Trending"
     },
     {
-      "title": "Aladdin",
+      "name": "Aladdin",
       "image": "https://lumiere-a.akamaihd.net/v1/images/image_9e35a739.jpeg?region=0,0,540,810",
       "description": "A young man discovers a magic lamp with a genie inside.",
       "duration": 128,
@@ -259,7 +259,7 @@
       "category": "Romance"
     },
     {
-      "title": "The Hunger Games",
+      "name": "The Hunger Games",
       "image": "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
       "description": "A young girl becomes a symbol of rebellion in a dystopian society.",
       "duration": 142,
@@ -268,7 +268,7 @@
       "category": "Sci-Fi"
     },
     {
-      "title": "The Greatest Showman",
+      "name": "The Greatest Showman",
       "image": "https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png",
       "description": "The story of P.T. Barnum and his rise to fame.",
       "duration": 105,
@@ -277,7 +277,7 @@
       "category": "Favorites"
     },
     {
-      "title": "Moana",
+      "name": "Moana",
       "image": "https://upload.wikimedia.org/wikipedia/en/2/26/Moana_Teaser_Poster.jpg",
       "description": "A young girl sets out on a journey to save her island.",
       "duration": 107,
@@ -285,7 +285,7 @@
       "cast": ["Auli'i Cravalho", "Dwayne Johnson", "Rachel House"],
       "category": "New Releases"
     },{
-      "title": "The Hobbit: An Unexpected Journey",
+      "name": "The Hobbit: An Unexpected Journey",
       "image": "https://play-lh.googleusercontent.com/BsTNbp2qk09yqmDkqNrbTZhq0uPT6x0B7L49jdCfUxFKGkLZlvJsrQnP7FSV8UDhjrQn",
       "description": "Bilbo Baggins embarks on an epic quest to reclaim the lost Dwarf Kingdom.",
       "duration": 169,
@@ -294,7 +294,7 @@
       "category": "Trending"
     },
     {
-      "title": "The Secret Life of Pets",
+      "name": "The Secret Life of Pets",
       "image": "https://upload.wikimedia.org/wikipedia/en/6/64/The_Secret_Life_of_Pets_poster.jpg",
       "description": "What pets do when their owners are away.",
       "duration": 86,
@@ -303,7 +303,7 @@
       "category": "Favorites"
     },
     {
-      "title": "Wonder Woman",
+      "name": "Wonder Woman",
       "image": "https://m.media-amazon.com/images/M/MV5BMjEzYmZkNjktODBmYi00NzNkLWIzMjItMjhkMWZiZTZlN2MwXkEyXkFqcGc@._V1_.jpg",
       "description": "The origin story of Diana, the Amazonian princess who becomes Wonder Woman.",
       "duration": 141,
@@ -312,7 +312,7 @@
       "category": "New Releases"
     },
     {
-      "title": "Ratatouille",
+      "name": "Ratatouille",
       "image": "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
       "description": "A rat with a passion for cooking teams up with a young chef.",
       "duration": 111,
@@ -321,7 +321,7 @@
       "category": "Favorites"
     },
     {
-      "title": "The Godfather",
+      "name": "The Godfather",
       "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
       "description": "The story of the Corleone crime family.",
       "duration": 175,
@@ -330,7 +330,7 @@
       "category": "Trending"
     },
     {
-      "title": "Finding Nemo",
+      "name": "Finding Nemo",
       "image": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
       "description": "A clownfish searches for his son in the vast ocean.",
       "duration": 100,
@@ -339,7 +339,7 @@
       "category": "Romance"
     },
     {
-      "title": "Avengers: Endgame",
+      "name": "Avengers: Endgame",
       "image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
       "description": "The Avengers assemble one final time to undo Thanos' actions.",
       "duration": 181,
@@ -348,7 +348,7 @@
       "category": "Sci-Fi"
     },
     {
-      "title": "Brave",
+      "name": "Brave",
       "image": "https://upload.wikimedia.org/wikipedia/en/9/96/Brave_Poster.jpg",
       "description": "A princess must rely on her bravery to undo a beastly curse.",
       "duration": 93,
@@ -357,7 +357,7 @@
       "category": "Favorites"
     },
     {
-      "title": "Star Wars: The Force Awakens",
+      "name": "Star Wars: The Force Awakens",
       "image": "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
       "description": "The Resistance faces the First Order in a new era of Star Wars.",
       "duration": 138,
@@ -366,7 +366,7 @@
       "category": "Sci-Fi"
     },
     {
-      "title": "Beauty and the Beast",
+      "name": "Beauty and the Beast",
       "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Beauty_and_the_Beast_2017_poster.jpg",
       "description": "A cursed prince learns the meaning of true love.",
       "duration": 129,

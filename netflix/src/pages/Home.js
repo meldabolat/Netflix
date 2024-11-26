@@ -5,79 +5,81 @@ import "./Home.css";
 
 const Home = () => {
   const [moviesByCategory, setMoviesByCategory] = useState({});
-  const [allMovies, setAllMovies] = useState([]);
   const [filteredMovies, setFilteredMovies] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(""); // Search input state
-  const [selectedCategory, setSelectedCategory] = useState(""); // Category select state
-  const [categories, setCategories] = useState([]); // Category options
+  const [allMovies, setAllMovies] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/movies")
-      .then((response) => {
+    const fetchMovies = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get("http://localhost:5000/movies");
         const movies = response.data;
+        setAllMovies(movies);
 
-        // Filmleri kategorilere göre gruplandır
-        const groupedMovies = movies.reduce((acc, movie) => {
-          const { category } = movie;
-          if (!acc[category]) {
-            acc[category] = [];
-          }
-          acc[category].push(movie);
+        // Tüm kategorileri topla
+        const allCategories = [...new Set(movies.flatMap(movie => movie.category))];
+        setCategories(allCategories);
+
+        // Filmleri kategorilerine göre grupla
+        const grouped = allCategories.reduce((acc, category) => {
+          acc[category] = movies.filter(movie => movie.category.includes(category));
           return acc;
         }, {});
 
-        // Kategorileri al
-        setCategories(Object.keys(groupedMovies));
-
-        // Favorites kategorisini rastgele sırala
-        if (groupedMovies["Favorites"]) {
-          groupedMovies["Favorites"] = groupedMovies["Favorites"].sort(
-            () => Math.random() - 0.5
-          );
-        }
-
-        setMoviesByCategory(groupedMovies);
-        setAllMovies(movies); // Tüm filmleri sakla
-        setFilteredMovies(movies); // Başlangıçta tüm filmleri göster
-      })
-      .catch((error) => {
+        setMoviesByCategory(grouped);
+        setFilteredMovies(movies);
+      } catch (error) {
         console.error("Error fetching movies:", error);
-      });
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMovies();
   }, []);
 
-  // Search filter
   const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
+    const term = e.target.value.toLowerCase();
+    setSearchTerm(term);
+
+    if (term === "" && selectedCategory === "") {
+      setFilteredMovies(allMovies);
+    } else {
+      const filtered = allMovies.filter(movie => {
+        const matchesSearch = movie.name.toLowerCase().includes(term);
+        const matchesCategory = selectedCategory === "" || movie.category.includes(selectedCategory);
+        return matchesSearch && matchesCategory;
+      });
+      setFilteredMovies(filtered);
+    }
   };
 
-  // Category filter
   const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
+    const category = e.target.value;
+    setSelectedCategory(category);
+
+    if (category === "" && searchTerm === "") {
+      setFilteredMovies(allMovies);
+    } else {
+      const filtered = allMovies.filter(movie => {
+        const matchesSearch = movie.name.toLowerCase().includes(searchTerm);
+        const matchesCategory = category === "" || movie.category.includes(category);
+        return matchesSearch && matchesCategory;
+      });
+      setFilteredMovies(filtered);
+    }
   };
 
-  // Filter films based on search term and selected category
-  useEffect(() => {
-    let filtered = allMovies;
-
-    // Filmleri arama terimine göre filtrele
-    if (searchTerm) {
-      filtered = filtered.filter((movie) =>
-        movie.title.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
-
-    // Kategoriyi filtrele
-    if (selectedCategory) {
-      filtered = filtered.filter((movie) => movie.category === selectedCategory);
-    }
-
-    setFilteredMovies(filtered);
-  }, [searchTerm, selectedCategory, allMovies]);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="home">
-      {/* Search Box */}
       <div className="home__search">
         <input
           type="text"
@@ -85,13 +87,10 @@ const Home = () => {
           value={searchTerm}
           onChange={handleSearch}
         />
-      </div>
-
-      {/* Category Dropdown */}
-      <div className="home__category-select">
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
+          className="home__category-select"
         >
           <option value="">All Categories</option>
           {categories.map((category) => (
@@ -102,17 +101,16 @@ const Home = () => {
         </select>
       </div>
 
-      {/* Movie Categories */}
       {searchTerm === "" && selectedCategory === "" ? (
-        // If no search term and no category is selected, show all categories
-        Object.entries(moviesByCategory).map(([category, movies]) => (
+        // Kategorilere göre gruplanmış filmler
+        categories.map((category) => (
           <div key={category} className="home__category">
-            <h2 className="home__category-title">{category}</h2>
+            <h2 className="home__category-name">{category}</h2>
             <div className="home__movies">
-              {movies.map((movie) => (
+              {moviesByCategory[category]?.map((movie) => (
                 <MovieCard
-                  key={movie.title}
-                  title={movie.title}
+                  key={`${category}-${movie.name}`}
+                  name={movie.name}
                   image={movie.image}
                   description={movie.description}
                   duration={movie.duration}
@@ -124,15 +122,17 @@ const Home = () => {
           </div>
         ))
       ) : (
-        // If search term is entered or a category is selected, show filtered movies
+        // Filtrelenmiş sonuçlar
         <div className="home__category">
-          <h2 className="home__category-title">{selectedCategory || "Search Results"}</h2>
+          <h2 className="home__category-name">
+            {selectedCategory || "Search Results"}
+          </h2>
           <div className="home__movies">
             {filteredMovies.length > 0 ? (
               filteredMovies.map((movie) => (
                 <MovieCard
-                  key={movie.title}
-                  title={movie.title}
+                  key={movie.name}
+                  name={movie.name}
                   image={movie.image}
                   description={movie.description}
                   duration={movie.duration}
@@ -141,7 +141,7 @@ const Home = () => {
                 />
               ))
             ) : (
-              <p>No movies found for your search</p>
+              <p>No movies found</p>
             )}
           </div>
         </div>
