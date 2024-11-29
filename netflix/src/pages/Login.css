@@ -1,12 +1,3 @@
-/* Sayfa genelindeki hizalama */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Yüksekliği ekranın tamamını kapsar */
-  margin: 0;
-  background-color: #121212; /* Arka plan rengi */
-}
 
 /* Login Konteyner */
 .login-container {

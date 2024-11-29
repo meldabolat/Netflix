@@ -1,7 +1,7 @@
 import React from "react";
 import { WatchHistoryProvider } from "./context/WatchHistoryContext";
 import { ListProvider } from "./context/ListContext";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import List from "./pages/List";
 import WatchHistory from "./pages/WatchHistory";
@@ -14,15 +14,15 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
-    <AuthProvider>
-      <WatchHistoryProvider>
-        <ListProvider>
-          <Router>
+    <BrowserRouter>
+      <AuthProvider>
+        <WatchHistoryProvider>
+          <ListProvider>
             <Routes>
               {/* Giriş ve Kayıt sayfaları herkese açık */}
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-              
+
               {/* Korumalı rotalar */}
               <Route path="/" element={<Layout />}>
                 <Route
@@ -59,10 +59,10 @@ function App() {
                 />
               </Route>
             </Routes>
-          </Router>
-        </ListProvider>
-      </WatchHistoryProvider>
-    </AuthProvider>
+          </ListProvider>
+        </WatchHistoryProvider>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 

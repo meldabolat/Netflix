@@ -11,37 +11,53 @@ const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const fetchMovies = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5000/movies");
+  
+        // Token'ı localStorage'dan al
+        const token = localStorage.getItem("access_token");
+  
+        if (!token) {
+          setError("You must be logged in to view movies.");
+          return;
+        }
+  
+        const response = await axios.get("http://192.168.1.43:8000/movies", {
+          headers: {
+            "Authorization": `Bearer ${token}`, // Token'ı Authorization başlığında kullan
+          }
+        });
+  
         const movies = response.data;
         setAllMovies(movies);
-
-        // Tüm kategorileri topla
+  
+        // Kategorileri grupla ve diğer işlemleri yap
         const allCategories = [...new Set(movies.flatMap(movie => movie.category))];
         setCategories(allCategories);
-
-        // Filmleri kategorilerine göre grupla
+  
         const grouped = allCategories.reduce((acc, category) => {
           acc[category] = movies.filter(movie => movie.category.includes(category));
           return acc;
         }, {});
-
+  
         setMoviesByCategory(grouped);
         setFilteredMovies(movies);
+  
       } catch (error) {
         console.error("Error fetching movies:", error);
+        setError("Failed to fetch movies. Please try again.");
       } finally {
         setLoading(false);
       }
     };
-
+  
     fetchMovies();
   }, []);
-
+  
   const handleSearch = (e) => {
     const term = e.target.value.toLowerCase();
     setSearchTerm(term);
@@ -146,6 +162,7 @@ const Home = () => {
           </div>
         </div>
       )}
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 };
